@@ -1,0 +1,10 @@
+services:
+  digilog:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - digilog-data:/data
+    restart: "no"
+volumes:
+  digilog-data:
